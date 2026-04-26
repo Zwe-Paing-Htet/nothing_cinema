@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/nc_black"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="24dp"
+        android:paddingTop="70dp"
+        android:paddingEnd="24dp"
+        android:paddingBottom="32dp">
+
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:layout_marginBottom="20dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="Go back"
+            android:padding="0dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_back_arrow"
+            android:tint="@color/nc_text_primary" />
+
+        <TextView
+            android:id="@+id/registerEyebrowTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Account"
+            android:textColor="@color/nc_text_secondary"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/registerTitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:text="Register"
+            style="@style/TextAppearance.NothingCinema.Display" />
+
+        <TextView
+            android:id="@+id/registerSubtitleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:text="Create your account to book tickets and manage your activity."
+            style="@style/TextAppearance.NothingCinema.BodySecondary" />
+
+        <EditText
+            android:id="@+id/registerUsernameEditText"
+            style="@style/Widget.NothingCinema.EditText"
+            android:layout_marginBottom="8dp"
+            android:hint="Username"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/usernameHelpText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            android:text="Username must be all lowercase with no spaces."
+            android:textColor="@color/nc_text_secondary"
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/registerEmailEditText"
+            style="@style/Widget.NothingCinema.EditText"
+            android:layout_marginBottom="14dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp">
+
+            <EditText
+                android:id="@+id/registerPasswordEditText"
+                style="@style/Widget.NothingCinema.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:paddingEnd="50dp" />
+
+            <ImageView
+                android:id="@+id/passwordToggle"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignEnd="@id/registerPasswordEditText"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/ic_eye"
+                android:tint="@color/nc_text_secondary" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/registerButton"
+            style="@style/Widget.NothingCinema.Button.Primary"
+            android:layout_marginBottom="20dp"
+            android:text="Register" />
+
+        <TextView
+            android:id="@+id/signInLink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Already has account? Sign In"
+            android:textAlignment="center"
+            android:textColor="@color/nc_text_secondary"
+            android:textSize="15sp"
+            android:fontFamily="sans-serif-medium"
+            android:clickable="true"
+            android:focusable="true" />
+
+    </LinearLayout>
+
+</ScrollView>

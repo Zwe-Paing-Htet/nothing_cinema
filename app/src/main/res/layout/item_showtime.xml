@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginBottom="16dp"
+    android:background="@drawable/bg_card"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/showtimeDateTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1/4/2026"
+        android:textColor="@color/nc_text_primary"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:fontFamily="serif"
+        android:layout_marginBottom="6dp" />
+
+    <TextView
+        android:id="@+id/showtimeTimeTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2:30 PM"
+        style="@style/TextAppearance.NothingCinema.BodySecondary"
+        android:layout_marginBottom="6dp" />
+
+    <TextView
+        android:id="@+id/movieNameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Movie Name"
+        style="@style/TextAppearance.NothingCinema.BodySecondary"
+        android:layout_marginBottom="4dp" />
+
+    <TextView
+        android:id="@+id/theatreNameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Theatre Name"
+        style="@style/TextAppearance.NothingCinema.Meta"
+        android:layout_marginBottom="14dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/editShowtimeButton"
+            style="@style/Widget.NothingCinema.Button.Secondary"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Edit" />
+
+        <Space
+            android:layout_width="12dp"
+            android:layout_height="1dp" />
+
+        <Button
+            android:id="@+id/deleteShowtimeButton"
+            style="@style/Widget.NothingCinema.Button.Danger"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Delete" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:name=".NothingCinemaApp"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.NothingCinema">
+        <activity
+            android:name=".WelcomeActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".MainActivity"/>
+        <!--        -->
+
+        <activity android:name=".RegisterActivity"/>
+        <activity android:name=".LoginActivity"/>
+
+        <activity android:name=".ViewCustomerActivity" />
+        <activity android:name=".CustomerProfileActivity" />
+        <activity android:name=".NotificationActivity" />
+
+        <activity android:name=".RegisterAdminActivity" />
+        <activity android:name=".ViewAdminActivity" />
+
+        <!--        -->
+
+        <activity android:name=".AdminDashboardActivity" />
+        <activity android:name=".AdminDataChartActivity" />
+
+        <activity android:name=".CreateMovieActivity"/>
+        <activity android:name=".ViewMovieActivity"/>
+        <activity android:name=".EditMovieActivity"/>
+
+        <activity android:name=".MovieCollectionActivity"/>
+        <activity android:name=".MovieDetailsActivity"/>
+        <activity android:name=".SearchMovieActivity"/>
+
+        <!--        -->
+
+        <activity android:name=".CreateCinemaActivity"/>
+        <activity android:name=".ViewCinemaActivity"/>
+        <activity android:name=".EditCinemaActivity"/>
+
+        <activity android:name=".CinemaCollectionActivity"/>
+        <activity android:name=".CinemaDetailsActivity"/>
+
+        <activity android:name=".CreateTheatreActivity"/>
+        <activity android:name=".ViewTheatreActivity"/>
+        <activity android:name=".TheatreDetailsActivity"/>
+        <activity android:name=".EditTheatreActivity"/>
+
+        <!--        -->
+
+        <activity android:name=".CreateShowtimeActivity"/>
+        <activity android:name=".ViewShowtimeActivity"/>
+        <activity android:name=".ShowtimeDetailsActivity"/>
+        <activity android:name=".EditShowtimeActivity"/>
+
+        <activity android:name=".TheatreShowtimeDateActivity"/>
+        <activity android:name=".TheatreShowtimeTimeActivity"/>
+
+        <!--        -->
+
+        <activity android:name=".CreateSeatTypeActivity" />
+        <activity android:name=".ViewSeatTypeActivity" />
+
+        <activity android:name=".CreateSeatActivity" />
+        <activity android:name=".ViewSeatActivity" />
+
+        <activity android:name=".TheatreSeatStructureActivity" />
+
+        <!--        -->
+
+        <activity android:name=".ViewBookingActivity"/>
+        <activity android:name=".SeatSelectionActivity"/>
+        <activity android:name=".BookConfirmationActivity" />
+
+        <activity android:name=".BuyPaymentActivity" />
+        <activity android:name=".BuyConfirmationActivity" />
+
+
+        <activity android:name=".AdminViewSeatedTheatresActivity" />
+        <activity android:name=".AdminTheatreShowtimesActivity" />
+        <activity android:name=".AdminSeatStatusActivity" />
+        <activity android:name=".AdminShowtimeBookingsActivity" />
+
+        <activity android:name=".ReviewBuyPaymentsActivity" />
+
+<!--        -->
+        <activity android:name=".ThemeSettingsActivity" />
+        <activity android:name=".TermsAndConditionsActivity"/>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/nc_black"
+    android:paddingStart="24dp"
+    android:paddingTop="70dp"
+    android:paddingEnd="24dp"
+    android:paddingBottom="24dp">
+
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="37dp"
+        android:layout_height="37dp"
+        android:layout_marginBottom="20dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Go back"
+        android:padding="0dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_back_arrow"
+        android:tint="@color/nc_text_primary" />
+
+
+    <TextView
+        android:id="@+id/tvTitleEyebrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Admin"
+        android:textColor="@color/nc_text_secondary"
+        android:textSize="14sp"
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginBottom="14dp" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registered Admins"
+        style="@style/TextAppearance.NothingCinema.Display"
+        android:layout_marginBottom="12dp" />
+
+    <TextView
+        android:id="@+id/tvSubtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Review administrator accounts currently registered in the system."
+        style="@style/TextAppearance.NothingCinema.BodySecondary"
+        android:layout_marginBottom="18dp" />
+
+    <TextView
+        android:id="@+id/emptyAdminsTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No administrator accounts found yet."
+        style="@style/TextAppearance.NothingCinema.BodySecondary"
+        android:visibility="gone"
+        android:layout_marginBottom="12dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewAdmins"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>

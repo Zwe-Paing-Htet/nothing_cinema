@@ -1,0 +1,20 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Base.Theme.NothingCinema" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowBackground">@color/nc_surface</item>
+        <item name="android:statusBarColor">@color/nc_surface</item>
+        <item name="android:navigationBarColor">@color/nc_surface</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+
+        <item name="colorPrimary">@color/nc_accent_red</item>
+        <item name="colorOnPrimary">@color/nc_text_on_accent</item>
+        <item name="colorSecondary">@color/nc_surface_alt</item>
+        <item name="colorOnSecondary">@color/nc_text_primary</item>
+        <item name="colorSurface">@color/nc_surface</item>
+        <item name="colorOnSurface">@color/nc_text_primary</item>
+    </style>
+
+    <style name="Theme.NothingCinema" parent="Base.Theme.NothingCinema" />
+
+</resources>

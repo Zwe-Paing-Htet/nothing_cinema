@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Showtime Date -->
+    <TextView
+        android:id="@+id/showtimeDateTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Showtime: 2021-12-01"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- Showtime Time (New TextView for showtime time) -->
+    <TextView
+        android:id="@+id/showtimeTimeTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Time: 2:30 PM"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp" />
+
+    <!-- Movie Name -->
+    <TextView
+        android:id="@+id/movieNameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Movie: Some Movie"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp" />
+
+    <!-- Theatre Name -->
+    <TextView
+        android:id="@+id/theatreNameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Theatre: Some Theatre"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp" />
+
+</LinearLayout>

@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    android:orientation="vertical"
+    android:background="@drawable/bg_card"
+    android:padding="12dp">
+
+    <ImageView
+        android:id="@+id/theatreImageView"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+    android:layout_marginBottom="10dp"
+    android:scaleType="centerCrop"
+    android:background="@drawable/rounded_image_bg"
+    android:clipToOutline="true"
+    android:src="@drawable/ic_placeholder" />
+
+    <TextView
+        android:id="@+id/theatreNameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Theatre Name"
+        android:textColor="@color/nc_text_primary"
+        android:textSize="18sp"
+    android:textStyle="bold"
+    android:layout_marginBottom="4dp" />
+
+    <TextView
+        android:id="@+id/theatreTypeTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="IMAX"
+        android:textColor="@color/nc_text_secondary"
+        android:textSize="13sp" />
+
+</LinearLayout>

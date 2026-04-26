@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bg_dialog_panel"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Edit Seat Type"
+        style="@style/TextAppearance.NothingCinema.SectionTitle"
+        android:layout_marginBottom="14dp" />
+
+    <EditText
+        android:id="@+id/editSeatTypeNameEditText"
+        style="@style/Widget.NothingCinema.EditText"
+        android:hint="Seat type name"
+        android:inputType="text"
+        android:layout_marginBottom="12dp" />
+
+    <EditText
+        android:id="@+id/editSeatTypePriceEditText"
+        style="@style/Widget.NothingCinema.EditText"
+        android:hint="Seat price"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="18dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/cancelButton"
+            style="@style/Widget.NothingCinema.Button.Danger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel" />
+
+        <Button
+            android:id="@+id/saveButton"
+            style="@style/Widget.NothingCinema.Button.Primary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="Save" />
+    </LinearLayout>
+
+</LinearLayout>

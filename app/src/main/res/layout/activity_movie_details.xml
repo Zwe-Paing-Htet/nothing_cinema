@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/nc_black"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="24dp"
+        android:paddingTop="70dp"
+        android:paddingEnd="24dp"
+        android:paddingBottom="32dp">
+
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:layout_marginBottom="20dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="Go back"
+            android:padding="0dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_back_arrow"
+            android:tint="@color/nc_text_primary" />
+
+        <ImageView
+            android:id="@+id/coverPosterImageView"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/rounded_image_bg"
+            android:clipToOutline="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_placeholder"
+            android:contentDescription="Cover Poster" />
+
+        <ImageView
+            android:id="@+id/moviePosterImageView"
+            android:layout_width="220dp"
+            android:layout_height="320dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/rounded_image_bg"
+            android:clipToOutline="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_placeholder"
+            android:contentDescription="Movie Poster" />
+
+        <TextView
+            android:id="@+id/movieNameTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Movie Name"
+            style="@style/TextAppearance.NothingCinema.Display"
+            android:layout_marginBottom="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_card"
+            android:padding="18dp"
+            android:layout_marginBottom="18dp">
+
+            <TextView
+                android:id="@+id/movieRuntimeTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="105 min"
+                style="@style/TextAppearance.NothingCinema.BodySecondary"
+                android:layout_marginBottom="6dp" />
+
+            <TextView
+                android:id="@+id/movieGenreTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Comedy, Animation"
+                style="@style/TextAppearance.NothingCinema.BodySecondary"
+                android:layout_marginBottom="6dp" />
+
+            <TextView
+                android:id="@+id/movieDirectorTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Daniel Chong"
+                style="@style/TextAppearance.NothingCinema.BodySecondary"
+                android:layout_marginBottom="6dp" />
+
+            <TextView
+                android:id="@+id/movieCastTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cast info"
+                style="@style/TextAppearance.NothingCinema.BodySecondary" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Synopsis"
+            style="@style/TextAppearance.NothingCinema.SectionTitle"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:id="@+id/movieDescriptionTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            style="@style/TextAppearance.NothingCinema.BodySecondary"
+            android:lineSpacingExtra="4dp"
+            android:layout_marginBottom="18dp" />
+
+        <Button
+            android:id="@+id/openTrailerButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="28dp"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="#d71921"
+            android:drawableStart="@drawable/ic_cinema"
+            android:drawablePadding="8dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:text="Open Trailer"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Available Theatres"
+            style="@style/TextAppearance.NothingCinema.SectionTitle"
+            android:layout_marginBottom="12dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/theatresRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false" />
+
+    </LinearLayout>
+</ScrollView>

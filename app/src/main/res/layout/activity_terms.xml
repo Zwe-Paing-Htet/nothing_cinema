@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/nc_black"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="24dp"
+        android:paddingTop="70dp"
+        android:paddingEnd="24dp"
+        android:paddingBottom="32dp">
+
+        <!-- Back Button -->
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:layout_marginBottom="20dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_back_arrow"
+            android:tint="@color/nc_text_primary" />
+
+        <!-- Page Title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Privacy Policy"
+            android:textColor="@color/nc_text_primary"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Paragraph -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Protection of your personal information is important to us, and this privacy policy explains how we collect, use, share, disclose and protect personal information about users of the services, including practitioners, end-users, and website visitors. Your use of and access to the services is subject to this privacy policy and our Terms of Use."
+            android:textColor="@color/nc_text_secondary"
+            android:textSize="15sp"
+            android:lineSpacingExtra="6dp"
+            android:layout_marginBottom="18dp" />
+
+        <!-- IMPORTANT NOTICE -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Important Notice"
+            android:textColor="@color/nc_text_primary"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="By using the services or providing your information, you are deemed to have read, understood and agreed to this privacy policy. We may update this policy at any time. If you do not agree, please do not use the services. If you use the services on behalf of another person or entity, you confirm that you are authorized to accept this policy on their behalf."
+            android:textColor="@color/nc_text_secondary"
+            android:textSize="15sp"
+            android:lineSpacingExtra="6dp"
+            android:layout_marginBottom="18dp" />
+
+        <!-- Collection -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Collection of Personal Information"
+            android:textColor="@color/nc_text_primary"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Some services require us to know who you are to better meet your needs. We may collect personal information through interactions such as forms, emails, or calls. This information may identify you directly or indirectly."
+            android:textColor="@color/nc_text_secondary"
+            android:textSize="15sp"
+            android:lineSpacingExtra="6dp"
+            android:layout_marginBottom="18dp" />
+
+        <!-- Why -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Why We Collect Information"
+            android:textColor="@color/nc_text_primary"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="We collect information to establish a relationship and serve your needs. Most information is provided directly by you or by authorized healthcare providers. We only collect what is necessary and use it for those purposes. Additional use requires your consent."
+            android:textColor="@color/nc_text_secondary"
+            android:textSize="15sp"
+            android:lineSpacingExtra="6dp"
+            android:layout_marginBottom="18dp" />
+
+        <!-- Protection -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Protecting Your Information"
+            android:textColor="@color/nc_text_primary"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="We protect your information using appropriate safeguards. Access is restricted to authorized staff and agents. External parties must follow strict privacy rules and only use data as required for their services."
+            android:textColor="@color/nc_text_secondary"
+            android:textSize="15sp"
+            android:lineSpacingExtra="6dp"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Footer -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="J Cineplex Cinema Ticket\n\nDon't miss your showtime!\nBuy ticket now.\n\nTechnical Ph: 09940860207\nAdditional Ph: 09781682887"
+            android:textColor="@color/nc_text_secondary"
+            android:textSize="14sp"
+            android:lineSpacingExtra="4dp" />
+
+    </LinearLayout>
+
+</ScrollView>

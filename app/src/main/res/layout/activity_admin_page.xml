@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center">
+
+        <!-- TextView to display the logged-in username -->
+        <TextView
+            android:id="@+id/loggedInUserTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logged In: "
+            android:textSize="18sp"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="16dp"/>
+
+        <Button
+            android:id="@+id/btnProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="My Profile" />
+
+        <!-- Logout Button -->
+        <Button
+            android:id="@+id/logoutButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:layout_marginBottom="32dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Top Selling Movies"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <com.example.cinemaseats.DonutChartView
+            android:id="@+id/movieDonutChart"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/movieLegendTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Movie legend"
+            android:textSize="14sp"
+            android:layout_marginBottom="24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Most Booked Theatre"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <com.example.cinemaseats.DonutChartView
+            android:id="@+id/theatreDonutChart"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/theatreLegendTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Theatre legend"
+            android:textSize="14sp"
+            android:layout_marginBottom="24dp" />
+
+
+        <!-- Create Movie Button -->
+        <Button
+            android:id="@+id/createMovieButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create Movie" />
+
+        <!-- View Movie Button -->
+        <Button
+            android:id="@+id/viewMovieButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View Movies"
+            android:layout_marginBottom="32dp"/>
+
+        <!-- Button to navigate to Create Cinema Activity -->
+        <Button
+            android:id="@+id/createCinemaButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create Cinema" />
+
+        <!-- Button to navigate to View Cinema Activity -->
+        <Button
+            android:id="@+id/viewCinemaButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View Cinemas" />
+
+        <Button
+            android:id="@+id/viewTheatreButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View Theatres" />
+
+        <Button
+            android:id="@+id/viewShowtimeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View Showtime"
+            android:layout_marginBottom="32dp"/>
+
+        <Button
+            android:id="@+id/insertSeatTypePageButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Insert Seat Type" />
+
+        <Button
+            android:id="@+id/viewSeatTypePageButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View Seat Types"
+            android:layout_marginBottom="32dp"/>
+
+        <Button
+            android:id="@+id/createSeatPageButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create Seat" />
+
+        <Button
+            android:id="@+id/viewSeatPageButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View Seats"
+            android:layout_marginBottom="32dp"/>
+
+        <Button
+            android:id="@+id/btnViewCustomers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View Customers"
+            android:layout_marginBottom="32dp"/>
+
+        <Button
+            android:id="@+id/registerAdminButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register New Admin" />
+
+        <Button
+            android:id="@+id/btnViewAdmins"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View Admins"
+            android:layout_marginBottom="32dp"/>
+
+        <!-- View Bookings Button -->
+        <Button
+            android:id="@+id/viewBookingsButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View Bookings" />
+
+        <Button
+            android:id="@+id/viewSeatStatusPageButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View Seats Status"
+        android:layout_marginBottom="32dp" />
+
+        <Button
+            android:id="@+id/reviewBuyPaymentsButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Review Buy Payments"
+            android:layout_marginBottom="32dp" />
+
+    </LinearLayout>
+</ScrollView>

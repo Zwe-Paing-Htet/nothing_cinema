@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    android:layout_marginStart="6dp"
+    android:layout_marginEnd="6dp"
+    android:orientation="vertical"
+    android:background="@drawable/bg_card"
+    android:padding="12dp">
+
+    <!-- POSTER (PORTRAIT + ROUNDED) -->
+    <ImageView
+        android:id="@+id/moviePosterImageView"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:layout_marginBottom="10dp"
+        android:scaleType="centerCrop"
+        android:background="@drawable/rounded_image_bg"
+        android:clipToOutline="true"
+        android:src="@drawable/ic_placeholder" />
+
+    <TextView
+        android:id="@+id/movieNameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Movie Name"
+        android:textColor="@color/nc_text_primary"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginBottom="4dp"
+        android:maxLines="2" />
+
+    <TextView
+        android:id="@+id/movieRuntimeTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="105 min"
+        android:textColor="@color/nc_text_secondary"
+        android:textSize="13sp"
+        android:layout_marginBottom="2dp" />
+
+    <TextView
+        android:id="@+id/movieGenreTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Action, Drama"
+        android:textColor="@color/nc_text_secondary"
+        android:textSize="13sp" />
+
+</LinearLayout>

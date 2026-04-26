@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_admin_dashboard"
+        android:icon="@drawable/ic_dashboard_admin"
+        android:title="Dashboard" />
+
+    <item
+        android:id="@+id/nav_admin_chart"
+        android:icon="@drawable/ic_chart_admin"
+        android:title="Chart" />
+
+</menu>
